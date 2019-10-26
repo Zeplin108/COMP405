@@ -1,2 +1,0 @@
-# COMP405
-Website
