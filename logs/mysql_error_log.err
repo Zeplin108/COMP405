@@ -2,3 +2,7 @@
 2019-10-25T18:33:32.568793Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
 2019-10-25T18:33:32.569483Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
 2019-10-25T18:33:32.569533Z 0 [Note] D:\User\Applications\MAMP\\bin\mysql\bin\mysqld.exe (mysqld 5.7.24) starting as process 6060 ...
+2019-11-13T18:57:06.556748Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2019-11-13T18:57:06.556880Z 0 [Note] --secure-file-priv is set to NULL. Operations related to importing and exporting data are disabled
+2019-11-13T18:57:06.558446Z 0 [ERROR] Cannot open Windows EventLog; check privileges, or start server with --log_syslog=0
+2019-11-13T18:57:06.558500Z 0 [Note] D:\User\Applications\MAMP\\bin\mysql\bin\mysqld.exe (mysqld 5.7.24) starting as process 13596 ...
