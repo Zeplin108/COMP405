@@ -16,3 +16,38 @@
 [13-Nov-2019 18:57:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-79199fb7-f309-4fc3-b548-4dc4be7d52b0.php on line 13
 [13-Nov-2019 18:57:10 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-79199fb7-f309-4fc3-b548-4dc4be7d52b0.php on line 16
 [13-Nov-2019 18:57:10 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-79199fb7-f309-4fc3-b548-4dc4be7d52b0.php on line 21
+[13-Nov-2019 19:54:05 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_mysql.dll (The specified module could not be found.), D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_php_mysql.dll.dll (The specified module could not be found.)) in Unknown on line 0
+[13-Nov-2019 19:54:07 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-6f38a121-5580-4832-96fc-599c713c2110.php on line 3
+[13-Nov-2019 19:54:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-6f38a121-5580-4832-96fc-599c713c2110.php on line 12
+[13-Nov-2019 19:54:07 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-6f38a121-5580-4832-96fc-599c713c2110.php on line 13
+[13-Nov-2019 19:54:07 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-6f38a121-5580-4832-96fc-599c713c2110.php on line 16
+[13-Nov-2019 19:54:07 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-6f38a121-5580-4832-96fc-599c713c2110.php on line 21
+[13-Nov-2019 19:54:08 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_mysql.dll (The specified module could not be found.), D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_php_mysql.dll.dll (The specified module could not be found.)) in Unknown on line 0
+[13-Nov-2019 20:07:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in D:\User\Applications\MAMP\htdocs\Test\test_database.php:7
+Stack trace:
+#0 {main}
+  thrown in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 7
+[13-Nov-2019 20:08:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_connect() in D:\User\Applications\MAMP\htdocs\Test\test_database.php:8
+Stack trace:
+#0 {main}
+  thrown in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 8
+[13-Nov-2019 20:14:16 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_mysql.dll (The specified module could not be found.), D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_php_mysql.dll.dll (The specified module could not be found.)) in Unknown on line 0
+[13-Nov-2019 20:14:18 UTC] PHP Warning:  PHP Startup: Unable to load dynamic library 'php_mysql.dll' (tried: D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_mysql.dll (The specified module could not be found.), D:\User\Applications\MAMP\bin\php\php7.3.7\ext\php_php_mysql.dll.dll (The specified module could not be found.)) in Unknown on line 0
+[13-Nov-2019 20:14:54 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 2
+[13-Nov-2019 20:19:58 UTC] PHP Parse error:  syntax error, unexpected 'CloseCon' (T_STRING), expecting ',' or ';' in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 8
+[13-Nov-2019 20:39:00 UTC] PHP Parse error:  syntax error, unexpected '$result' (T_VARIABLE) in D:\User\Applications\MAMP\htdocs\Test\db_connection.php on line 17
+[13-Nov-2019 20:39:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ExecuteQuery() in D:\User\Applications\MAMP\htdocs\Test\db_connection.php:17
+Stack trace:
+#0 D:\User\Applications\MAMP\htdocs\Test\test_database.php(8): SelectDb()
+#1 {main}
+  thrown in D:\User\Applications\MAMP\htdocs\Test\db_connection.php on line 17
+[13-Nov-2019 20:39:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ExecuteQuery() in D:\User\Applications\MAMP\htdocs\Test\db_connection.php:17
+Stack trace:
+#0 D:\User\Applications\MAMP\htdocs\Test\test_database.php(8): SelectDb()
+#1 {main}
+  thrown in D:\User\Applications\MAMP\htdocs\Test\db_connection.php on line 17
+[13-Nov-2019 20:42:52 UTC] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 9
+[13-Nov-2019 20:49:05 UTC] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 14
+[13-Nov-2019 20:49:51 UTC] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 14
+[13-Nov-2019 20:50:24 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 9
+[13-Nov-2019 20:51:10 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 9
