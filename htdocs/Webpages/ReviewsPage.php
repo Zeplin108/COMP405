@@ -56,34 +56,41 @@
           <h2>Reviews</h2>
         </div>
 
-        <!-- Logic for products on page -->
-        <section class="boxes">
-          <figure>
-            <img src="Images/sauce.jpg" style="width: 50%">
-            <p>Description: Smooth tomato sauce</p>
-            <p>"Highly recommend" posted by ABC123</p>
-            <p style="text-align: right; padding: 10px">->More Reviews</p>
-          </figure>
-          <figure>
-            <img src="Images/spatula.jpg" style="width: 50%">
-            <p>Description: Two pack of spatulas</p>
-            <p>"Love the pun" posted by DEF456</p>
-            <p style="text-align: right; padding: 10px">->More Reviews</p>
-          </figure>
-          <figure>
-            <img src="Images/bbq.jpg" style="width: 50%">
-            <p>Description: Homemade barbeque sauce</p>
-            <p>"Best sauce I've ever had" posted by DEF456</p>
-            <p style="text-align: right; padding: 10px">->More Reviews</p>
-          </figure>
-          <figure>
-            <img src="Images/alfredo.jpg" style="width: 40%">
-            <p>Description: Creamy alfredo sauce</p>
-            <p>"Very rich, would buy again" posted by ABC123</p>
-            <p style="text-align: right; padding: 10px">->More Reviews</p>
-          </figure>
-        </section>
+        <!-- Logic for products on Reviews page -->
+		<?php
+			include 'db_connection.php';
+			
+			function item_template($item_values)
+			{
+				return "<figure>
+					<img src='Images/sauce.jpg' style='width: 50%'>
+					<p>" . $item_values["product_desc"]. "</p>
+					<p>" . $item_values["review_id"]. " From: " . $item_values["user_id"]."</p>
+					<p style='text-align: right; padding: 10px'>->More Reviews</p>
+					</figure>";
+			}
+			
 
+			$conn = OpenCon();
+			$result = SelectReviewsDb($conn);
+		
+			if ($result->num_rows > 0) 
+			{
+				// Output data of each row.
+				while($item_values = $result->fetch_assoc()) 
+				{
+					$item = item_template($item_values);
+					
+					echo "<section class='boxes'>" . $item ."</section>";
+				}
+			} else 
+			{
+				echo "0 results";
+			}
+			CloseCon($conn);
+		?>
+		
+		
         <!-- Pagination logic -->
         <div class="pagination">
           <a href="#">&laquo;</a>

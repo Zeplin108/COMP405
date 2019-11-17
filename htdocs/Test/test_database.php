@@ -5,14 +5,15 @@
 	
 	echo "<br>";
 	
-	$result = SelectDb($conn);
+	$result = SelectAllDb($conn);
 	if ($result->num_rows > 0) 
 		 {
 			// Output data of each row.
 			while($row = $result->fetch_assoc()) 
 			{
 				echo "item_id: " . $row["item_id"]. 
-				",<br> product_name: ". $row["product_name"]. 
+				",<br> product_name: ". $row["product_name"].
+				",<br> product_desc: ". $row["product_desc"].
 				",<br>  price: " . $row["price"]. 
 				",<br>  date_created: " . $row["date_created"].
 				",<br>  review_id: " . $row["review_id"]. 
@@ -23,7 +24,7 @@
 			echo "0 results";
 		}
 		
-	echo "<br>";
+	echo '<br>';
 	
     CloseCon($conn);
 	echo "Closed Successfully";
