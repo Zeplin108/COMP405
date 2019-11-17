@@ -99,3 +99,10 @@
 [Sun Nov 17 12:27:26 2019] [notice] Server built: May  6 2016 10:19:53
 [Sun Nov 17 12:27:26 2019] [notice] Parent: Created child process 968
 [Sun Nov 17 12:27:26 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+[Sun Nov 17 12:27:27 2019] [notice] Digest: generating secret for digest authentication ...
+[Sun Nov 17 12:27:27 2019] [notice] Digest: done
+[Sun Nov 17 12:27:28 2019] [notice] Child 968: Child process is running
+[Sun Nov 17 12:27:28 2019] [notice] Child 968: Acquired the start mutex.
+[Sun Nov 17 12:27:28 2019] [notice] Child 968: Starting 64 worker threads.
+[Sun Nov 17 12:27:28 2019] [notice] Child 968: Starting thread to listen on port 80.
+[Sun Nov 17 12:27:30 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/docs-assets
