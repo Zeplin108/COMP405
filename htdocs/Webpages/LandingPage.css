@@ -4,6 +4,13 @@ body
   font-family: "Times New Roman";
   margin: 0px;
   padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content
+{
+  flex: 1 0 auto;
 }
 
 .container
@@ -129,8 +136,9 @@ footer
 {
   background-color: #800000;
   border-top: 3px solid black;
-  position: absolute;
+  /* position: absolute; */
   width: 100%;
+  flex-shrink: 0;
 }
 
 /* Creates the separate columns for footer */
@@ -232,4 +240,20 @@ figure
   float: left;
   padding: 8px 16px;
   text-decoration: none;
+}
+
+/* Login */
+form
+{
+  border: 3px solid black;
+}
+
+input[type=text], input[type=password]
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
 }
