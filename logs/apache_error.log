@@ -81,3 +81,21 @@
 [Wed Nov 13 15:14:16 2019] [notice] Server built: May  6 2016 10:19:53
 [Wed Nov 13 15:14:16 2019] [notice] Parent: Created child process 11760
 [Wed Nov 13 15:14:16 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+[Wed Nov 13 15:14:17 2019] [notice] Digest: generating secret for digest authentication ...
+[Wed Nov 13 15:14:17 2019] [notice] Digest: done
+[Wed Nov 13 15:14:18 2019] [notice] Child 11760: Child process is running
+[Wed Nov 13 15:14:18 2019] [notice] Child 11760: Acquired the start mutex.
+[Wed Nov 13 15:14:18 2019] [notice] Child 11760: Starting 64 worker threads.
+[Wed Nov 13 15:14:18 2019] [notice] Child 11760: Starting thread to listen on port 80.
+[Wed Nov 13 15:14:54 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/favicon.ico
+[Wed Nov 13 15:18:15 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/favicon.ico
+[Wed Nov 13 15:39:20 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/favicon.ico
+[Wed Nov 13 15:49:05 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/favicon.ico
+[Sun Nov 17 12:27:22 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+[Sun Nov 17 12:27:23 2019] [warn] pid file D:/User/Applications/MAMP/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Sun Nov 17 12:27:23 2019] [notice] Digest: generating secret for digest authentication ...
+[Sun Nov 17 12:27:23 2019] [notice] Digest: done
+[Sun Nov 17 12:27:26 2019] [notice] Apache/2.2.31 (Win32) DAV/2 mod_ssl/2.2.31 OpenSSL/1.0.2h mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.6 PHP/7.3.7 mod_perl/2.0.8 Perl/v5.16.3 configured -- resuming normal operations
+[Sun Nov 17 12:27:26 2019] [notice] Server built: May  6 2016 10:19:53
+[Sun Nov 17 12:27:26 2019] [notice] Parent: Created child process 968
+[Sun Nov 17 12:27:26 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
