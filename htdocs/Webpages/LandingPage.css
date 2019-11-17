@@ -1,0 +1,235 @@
+body
+{
+  background-color: #ebeae8;
+  font-family: "Times New Roman";
+  margin: 0px;
+  padding: 0px;
+}
+
+.container
+{
+  position: relative;
+  height: 100%;
+}
+
+main
+{
+  margin-left: 190px;
+  padding: 5px;
+  /* width: 85%; */
+}
+
+/* Styles nav bar */
+.topnav
+{
+  overflow: hidden;
+  background-color: #800000;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* TODO: fix border */
+/* Styles text in nav bar*/
+.topnav a
+{
+  float: left;
+  color: #ebeae8;
+  text-align: center;
+  padding: 24px 26px;
+  text-decoration: none;
+  font-size: 25px;
+  /* border-right: 3px solid black; */
+}
+
+/* Adds color when nav bar is hovered over */
+.topnav a:hover
+{
+  background-color: #4d0000;
+}
+
+/* Makes active button in nav bar lighter */
+.topnav a.active
+{
+  width: 15%;
+  background-color: gray;
+  color: #ebeae8;
+}
+
+* {box-sizing: border-box;}
+
+.slideImages
+{
+  display: none;
+}
+
+img
+{
+  vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container
+{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position "next button" to the right */
+.next
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add black background color with a bit of see-through */
+.prev:hover, .next:hover
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* dots/bullets/indicators */
+.dot
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover
+{
+  background-color: #717171;
+}
+
+/* Styles footer */
+footer
+{
+  background-color: #800000;
+  border-top: 3px solid black;
+  position: absolute;
+  width: 100%;
+}
+
+/* Creates the separate columns for footer */
+*
+{
+  box-sizing: border-box;
+}
+
+/* TODO: fix border */
+/* Creates two equal columns next to each other */
+.column
+{
+  float: left;
+  width: 50%;
+  padding: 10px;
+  border-right: 3px solid black;
+}
+
+/* Clear floats after the columns */
+.row:after
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column p
+{
+  color: #ebeae8;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Logic for side panel in explore and review page */
+aside
+{
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  /* padding-top: 25px; */
+  text-align: center;
+  background-color: #800000;
+  border-right: 3px solid black;
+  /* top: 0px;
+  left: 0px; */
+}
+
+/* TODO: fix style to it shows up how I want it to */
+.accordion
+{
+  background-color: #800000;
+  color: #ebeae8;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.4s;
+  outline: none;
+  border: none;
+}
+
+.panel
+{
+  color: #ebeae8;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+
+/* boxes for products */
+.boxes
+{
+  padding-left: 100px;
+}
+
+figure
+{
+  background-color: lightgray;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  font-size: 18px;
+  border: 1px solid black;
+  margin: 25px;
+  float: left;
+}
+
+/* TODO: fix layout to be centered */
+/* Pagination */
+.pagination
+{
+  display: inline-block;
+}
+
+.pagination a
+{
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
