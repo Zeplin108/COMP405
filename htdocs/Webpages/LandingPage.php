@@ -12,11 +12,11 @@
           <a href="ExplorePage.php">Explore</a>
           <a href="ReviewsPage.php">Reviews</a>
           <a href="AboutPage.php">About</a>
-          <a href="LoginPage.php">Login</a>
+          <a href="LoginPage.php" style="border-right: none">Login</a>
         </div>
 
         <!-- TODO: fix styling -->
-        <div style="color: #800000; text-align: center; font-size: 50px; padding: 0px">
+        <div style="color: #800000; text-align: center; font-size: 50px; padding: 0px; margin: 0px">
           <h2>Consumables</h2>
         </div>
 
@@ -45,7 +45,7 @@
       </div>
       <br>
 
-      <div style="text-align: center">
+      <div style="text-align: center; padding-bottom: 15px">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
@@ -90,7 +90,7 @@
         <!-- Footer logic -->
         <footer>
           <div class="row">
-            <div class="column">
+            <div class="column" style="border-right: 3px solid black; line-height: 260%">
               <p>We are dedicated to delivering a wide variety of products
                 made available by users.</p>
             </div>

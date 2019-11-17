@@ -13,7 +13,7 @@
       <a href="ExplorePage.php">Explore</a>
       <a href="ReviewsPage.php">Reviews</a>
       <a class="active" href="AboutPage.php">About</a>
-      <a href="LoginPage.php">Login</a>
+      <a href="LoginPage.php" style="border-right: none">Login</a>
     </div>
 
     <!-- TODO: fix styling -->
@@ -26,7 +26,7 @@
     <!-- Footer logic -->
     <footer>
       <div class="row">
-        <div class="column">
+        <div class="column" style="border-right: 3px solid black; line-height: 260%">
           <p>We are dedicated to delivering a wide variety of products
             made available by users.</p>
         </div>

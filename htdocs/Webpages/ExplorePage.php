@@ -12,7 +12,7 @@
         <a class="active" href="ExplorePage.php">Explore</a>
         <a href="ReviewsPage.php">Reviews</a>
         <a href="AboutPage.php">About</a>
-        <a href="LoginPage.php">Login</a>
+        <a href="LoginPage.php" style="border-right: none">Login</a>
       </div>
 
       <div class="container">
@@ -36,15 +36,12 @@
 
           for(i = 0; i < acc.length; i++)
           {
-            acc[i].addEventListener("click", function() 
-			{
+            acc[i].addEventListener("click", function() {
               this.classList.toggle("active");
               var panel = this.nextElementSibling;
-              if(panel.style.display === "block") 
-			  {
+              if(panel.style.display === "block") {
                 panel.style.display = "none";
-              } else 
-			  {
+              } else {
                 panel.style.display = "block";
               }
             });
@@ -61,6 +58,7 @@
           </div>
 
           <!-- Logic for products on page -->
+      <div class="paginationWrapper">
 			<?php
 				include 'db_connection.php';
 				
@@ -71,7 +69,7 @@
 						<img src='Images/sauce.jpg' style='width: 50%'>
 						<p>" . $item_values["product_desc"]."</p>
 						<p>" . $item_values["price"]."</p>
-						<p style='text-align: right; padding: 10px'>->More Reviews</p>
+						<p style='text-align: right; padding: 10px'>->More Info</p>
 						</figure>";
 				}
 		  
@@ -98,15 +96,18 @@
 				CloseCon($conn);
 			?>
 
-          <!-- Pagination logic -->
-          <div class="pagination">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">&raquo;</a>
-          </div>
+              <!-- Pagination logic -->
+              <!-- TODO: active does not change on click -->
+              <div class="pagination">
+                <a href="#">&laquo;</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">&raquo;</a>
+              </div>
 
+            </section>
+          </div>
         </main>
       </div>
     </div>
@@ -114,7 +115,7 @@
       <!-- Footer logic -->
       <footer>
         <div class="row">
-          <div class="column">
+          <div class="column" style="border-right: 3px solid black; line-height: 260%">
             <p>We are dedicated to delivering a wide variety of products
               made available by users.</p>
           </div>

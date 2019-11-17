@@ -12,7 +12,7 @@
       <a href="ExplorePage.php">Explore</a>
       <a class="active" href="ReviewsPage.php">Reviews</a>
       <a href="AboutPage.php">About</a>
-      <a href="LoginPage.php">Login</a>
+      <a href="LoginPage.php" style="border-right: none">Login</a>
     </div>
 
     <div class="container">
@@ -57,6 +57,7 @@
         </div>
 
         <!-- Logic for products on Reviews page -->
+    <div class="paginationWrapper">
 		<?php
 			include 'db_connection.php';
 			
@@ -73,7 +74,7 @@
 					$user_values = $user->fetch_assoc();
 					
 					return "<figure>
-					<img src='Images/sauce.jpg' style='width: 50%'>
+					<img src='Images/sauce.jpg' style='width: 40%; padding-top: 10px'>
 					<p>" . $item_values["product_desc"]. "</p>
 					<p>" . $user_values["comments"]. " From: " . $user_values["username"]."</p>
 					<p style='text-align: right; padding: 10px'>->More Reviews</p>
@@ -119,7 +120,7 @@
     <!-- Footer logic -->
     <footer>
       <div class="row">
-        <div class="column">
+        <div class="column" style="border-right: 3px solid black; line-height: 260%">
           <p>We are dedicated to delivering a wide variety of products
             made available by users.</p>
         </div>
