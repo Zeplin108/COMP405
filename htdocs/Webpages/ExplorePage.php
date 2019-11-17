@@ -61,32 +61,38 @@
           </div>
 
           <!-- Logic for products on page -->
-          <section class="boxes">
-            <figure>
-              <img src="Images/sauce.jpg" style="width: 50%">
-              <p>Description: Smooth tomato sauce</p>
-              <p>Price: $3.99</p>
-              <p style="text-align: right; padding: 10px">->More Info</p>
-            </figure>
-            <figure>
-              <img src="Images/spatula.jpg" style="width: 50%">
-              <p>Description: Two pack of spatulas</p>
-              <p>Price: $4.99</p>
-              <p style="text-align: right; padding: 10px">->More Info</p>
-            </figure>
-            <figure>
-              <img src="Images/bbq.jpg" style="width: 50%">
-              <p>Description: Homemade barbeque sauce</p>
-              <p>Price: $6.99</p>
-              <p style="text-align: right; padding: 10px">->More Info</p>
-            </figure>
-            <figure>
-              <img src="Images/alfredo.jpg" style="width: 40%">
-              <p>Description: Creamy alfredo sauce</p>
-              <p>Price: $5.99</p>
-              <p style="text-align: right; padding: 10px">->More Info</p>
-            </figure>
-          </section>
+			<?php>
+				include 'db_connection.php';
+				
+				function product_template($item_values)
+				{
+					return "<figure>
+						<img src='Images/sauce.jpg' style='width: 50%'>
+						<p>" . $item_values["product_desc"]."</p>
+						<p>" . $item_values["price"]."</p>
+						<p style='text-align: right; padding: 10px'>->More Reviews</p>
+						</figure>";
+				}
+		  
+		  
+				$conn = OpenCon();
+				$result = SelectProductDb($conn);
+			
+				if ($result->num_rows > 0) 
+				{
+					// Output data of each row.
+					while($item_values = $result->fetch_assoc()) 
+					{
+						$item = product_template($item_values);
+						
+						echo "<section class='boxes'>" . $item ."</section>";
+					}
+				} else 
+				{
+					echo "0 results";
+				}
+				CloseCon($conn);
+			?>
 
           <!-- Pagination logic -->
           <div class="pagination">

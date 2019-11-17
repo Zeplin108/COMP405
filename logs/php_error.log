@@ -75,3 +75,4 @@ Stack trace:
 [17-Nov-2019 21:16:43 UTC] PHP Notice:  Undefined variable: row in D:\User\Applications\MAMP\htdocs\Webpages\ReviewsPage.php on line 82
 [17-Nov-2019 21:16:43 UTC] PHP Notice:  Undefined variable: row in D:\User\Applications\MAMP\htdocs\Webpages\ReviewsPage.php on line 83
 [17-Nov-2019 21:16:43 UTC] PHP Notice:  Undefined variable: row in D:\User\Applications\MAMP\htdocs\Webpages\ReviewsPage.php on line 84
+[17-Nov-2019 21:35:53 UTC] PHP Warning:  Use of undefined constant php - assumed 'php' (this will throw an Error in a future version of PHP) in D:\User\Applications\MAMP\htdocs\Webpages\ExplorePage.php on line 64
