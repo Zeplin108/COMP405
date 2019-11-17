@@ -61,9 +61,10 @@
           </div>
 
           <!-- Logic for products on page -->
-			<?php>
+			<?php
 				include 'db_connection.php';
 				
+				// Returns the html template, filled with the information for each individual item.
 				function product_template($item_values)
 				{
 					return "<figure>
@@ -74,10 +75,12 @@
 						</figure>";
 				}
 		  
-		  
+				// Open Connection to MySQL database.
 				$conn = OpenCon();
+				// Return result of product SELECT query.
 				$result = SelectProductDb($conn);
 			
+				//Check if the query returned at least one result.
 				if ($result->num_rows > 0) 
 				{
 					// Output data of each row.
@@ -91,6 +94,7 @@
 				{
 					echo "0 results";
 				}
+				// Close MySQL connection.
 				CloseCon($conn);
 			?>
 

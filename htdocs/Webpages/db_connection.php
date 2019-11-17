@@ -1,4 +1,5 @@
 <?php
+	// List of functions to query MySQL database (Mostly for SELECT statements) about various information needed for the website.
     function OpenCon()
      {
 		$dbhost = "localhost";
@@ -36,6 +37,16 @@
 
 		return $result;
 	 }
+	 
+	 function SelectUserAndReviewDb($conn, $review_id)
+	 {
+		$sql = "SELECT comments, username FROM `reviews` WHERE review_id = " . $review_id.";";
+
+		$result = $conn->query($sql);
+
+		return $result;
+	 }
+	 
      
     function CloseCon($conn)
      {

@@ -24,7 +24,7 @@
 			echo "0 results";
 		}
 		
-	echo '<br>';
+	echo "<br>";
 	
     CloseCon($conn);
 	echo "Closed Successfully";
