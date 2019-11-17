@@ -56,62 +56,44 @@
           <h2>Reviews</h2>
         </div>
 
-        <!-- Logic for products on Reviews page -->
-    <div class="paginationWrapper">
-		<?php
-			include 'db_connection.php';
-			
-			// Returns the html template, filled with the information for each individual item.
-			function item_template($review_id, $conn)
-			{
-				// Assigns query results of username and comments to 'user'.
-				$user = SelectUserAndReviewDb($conn, $review_id);
-				
-				// Checks if the number of rows returned from query is at least one.
-				if ($user->num_rows > 0)
-				{
-					// Finds MySQL associations from items in array, allowing them to be indexed inside of the return by key.
-					$user_values = $user->fetch_assoc();
-					
-					return "<figure>
-					<img src='Images/sauce.jpg' style='width: 40%; padding-top: 10px'>
-					<p>" . $item_values["product_desc"]. "</p>
-					<p>" . $user_values["comments"]. " From: " . $user_values["username"]."</p>
-					<p style='text-align: right; padding: 10px'>->More Reviews</p>
-					</figure>";
-				}
-			}
-			
-			// Open connection to MySQL.
-			$conn = OpenCon();
-			// Select results of reviews from database.
-			$result = SelectReviewsDb($conn);
-		
-			if ($result->num_rows > 0) 
-			{
-				// Output data of each row.
-				while($item_values = $result->fetch_assoc()) 
-				{
-					$item = item_template($item_values["review_id"], $conn);
-					
-					echo "<section class='boxes'>" . $item ."</section>";
-				}
-			} else 
-			{
-				echo "0 results";
-			}
-			// Close MySQL connection.
-			CloseCon($conn);
-		?>
-		
-		
-        <!-- Pagination logic -->
-        <div class="pagination">
-          <a href="#">&laquo;</a>
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">&raquo;</a>
+        <!-- Logic for products on page -->
+        <div class="paginationWrapper">
+          <section class="boxes">
+            <figure>
+              <img src="sauce.jpg" style="width: 50%; padding-top: 10px">
+              <p>Description: Smooth tomato sauce</p>
+              <p>"Highly recommend" posted by ABC123</p>
+              <p class="moreInfo">More Reviews</p>
+            </figure>
+            <figure>
+              <img src="spatula.jpg" style="width: 50%; padding-top: 10px">
+              <p>Description: Two pack of spatulas</p>
+              <p>"Love the pun" posted by DEF456</p>
+              <p class="moreInfo">More Reviews</p>
+            </figure>
+            <figure>
+              <img src="bbq.jpg" style="width: 50%; padding-top: 10px">
+              <p>Description: Homemade barbeque sauce</p>
+              <p>"Best sauce I've ever had" posted by DEF456</p>
+              <p class="moreInfo">More Reviews</p>
+            </figure>
+            <figure>
+              <img src="alfredo.jpg" style="width: 40%; padding-top: 10px">
+              <p>Description: Creamy alfredo sauce</p>
+              <p>"Very rich, would buy again" posted by ABC123</p>
+              <p class="moreInfo">More Reviews</p>
+            </figure>
+
+            <!-- Pagination logic -->
+            <!-- TODO: active does not change on click -->
+            <div class="pagination">
+              <a href="#">&laquo;</a>
+              <a href="#" class="active">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">&raquo;</a>
+            </div>
+          </section>
         </div>
       </main>
     </div>

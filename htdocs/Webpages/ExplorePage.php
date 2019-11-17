@@ -58,43 +58,32 @@
           </div>
 
           <!-- Logic for products on page -->
-      <div class="paginationWrapper">
-			<?php
-				include 'db_connection.php';
-				
-				// Returns the html template, filled with the information for each individual item.
-				function product_template($item_values)
-				{
-					return "<figure>
-						<img src='Images/sauce.jpg' style='width: 50%'>
-						<p>" . $item_values["product_desc"]."</p>
-						<p>" . $item_values["price"]."</p>
-						<p style='text-align: right; padding: 10px'>->More Info</p>
-						</figure>";
-				}
-		  
-				// Open Connection to MySQL database.
-				$conn = OpenCon();
-				// Return result of product SELECT query.
-				$result = SelectProductDb($conn);
-			
-				//Check if the query returned at least one result.
-				if ($result->num_rows > 0) 
-				{
-					// Output data of each row.
-					while($item_values = $result->fetch_assoc()) 
-					{
-						$item = product_template($item_values);
-						
-						echo "<section class='boxes'>" . $item ."</section>";
-					}
-				} else 
-				{
-					echo "0 results";
-				}
-				// Close MySQL connection.
-				CloseCon($conn);
-			?>
+          <div class="paginationWrapper">
+            <section class="boxes">
+              <figure>
+                <img src="sauce.jpg" style="width: 50%; padding-top: 10px">
+                <p>Description: Smooth tomato sauce</p>
+                <p>Price: $3.99</p>
+                <p class="moreInfo">More Info</p>
+              </figure>
+              <figure>
+                <img src="spatula.jpg" style="width: 50%; padding-top: 10px">
+                <p>Description: Two pack of spatulas</p>
+                <p>Price: $4.99</p>
+                <p class="moreInfo">More Info</p>
+              </figure>
+              <figure>
+                <img src="bbq.jpg" style="width: 50%; padding-top: 10px">
+                <p>Description: Homemade barbeque sauce</p>
+                <p>Price: $6.99</p>
+                <p class="moreInfo">More Info</p>
+              </figure>
+              <figure>
+                <img src="alfredo.jpg" style="width: 40%; padding-top: 10px">
+                <p>Description: Creamy alfredo sauce</p>
+                <p>Price: $5.99</p>
+                <p class="moreInfo">More Info</p>
+              </figure>
 
               <!-- Pagination logic -->
               <!-- TODO: active does not change on click -->

@@ -20,6 +20,18 @@
     <div style="color: #800000; text-align: center; font-size: 50px; padding: 0px">
       <h2>About</h2>
       <p>Random shit about the company</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Pellentesque maximus bibendum elementum. Integer ultricies justo
+        et nunc elementum dignissim. Suspendisse mattis finibus est, in
+        faucibus ante fermentum ac. Fusce pellentesque consectetur lacus,
+        ut ultricies tortor ornare at. Nullam suscipit pellentesque iaculis.
+        Nunc vel libero dapibus, fringilla eros non, molestie dui.
+        Duis mauris nibh, sagittis ut turpis non, pulvinar placerat mauris.
+        Fusce et purus vitae ipsum porttitor efficitur.
+        Curabitur eget sapien rutrum, molestie nunc et, auctor nulla.
+        Nunc eu cursus augue, convallis dictum libero. Donec molestie quis
+        lorem vel gravida. Proin ac ex ante. Nunc bibendum lorem sit amet
+        ornare convallis.</p>
     </div>
   </div>
 
