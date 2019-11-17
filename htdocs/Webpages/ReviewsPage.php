@@ -60,6 +60,10 @@
         </div>
 
         <!-- Logic for products on page -->
+		<?php
+		
+		
+		?>
         <section class="boxes">
           <figure>
             <img src="Images/sauce.jpg" style="width: 50%">

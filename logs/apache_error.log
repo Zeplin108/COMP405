@@ -131,3 +131,16 @@
 [Sun Nov 17 13:03:55 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/luna.jpg
 [Sun Nov 17 13:03:55 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/race.jpg
 [Sun Nov 17 13:03:55 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/phillies.jpg
+[Sun Nov 17 13:09:58 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/pasta.jpg
+[Sun Nov 17 13:09:58 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/phillies.jpg
+[Sun Nov 17 13:09:58 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/luna.jpg
+[Sun Nov 17 13:09:58 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/race.jpg
+[Sun Nov 17 13:10:02 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/luna.jpg
+[Sun Nov 17 13:10:02 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/phillies.jpg
+[Sun Nov 17 13:10:02 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/pasta.jpg
+[Sun Nov 17 13:10:02 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/race.jpg
+[Sun Nov 17 13:10:12 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/pasta.jpg
+[Sun Nov 17 13:10:12 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/luna.jpg
+[Sun Nov 17 13:10:12 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/phillies.jpg
+[Sun Nov 17 13:10:12 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/race.jpg
+[Sun Nov 17 13:10:44 2019] [error] [client 127.0.0.1] script 'D:/User/Applications/MAMP/htdocs/Webpages/AboutPage.php' not found or unable to stat

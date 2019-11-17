@@ -58,3 +58,4 @@ Stack trace:
 [17-Nov-2019 17:27:31 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-eb8bf339-f725-4020-8328-02394d4f5f73.php on line 13
 [17-Nov-2019 17:27:31 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-eb8bf339-f725-4020-8328-02394d4f5f73.php on line 16
 [17-Nov-2019 17:27:31 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, boolean given in C:\Users\Zeplin108\AppData\Roaming\Appsolute\MAMP\pscripts\file-eb8bf339-f725-4020-8328-02394d4f5f73.php on line 21
+[17-Nov-2019 18:46:41 UTC] PHP Notice:  Trying to get property 'num_rows' of non-object in D:\User\Applications\MAMP\htdocs\Test\test_database.php on line 9

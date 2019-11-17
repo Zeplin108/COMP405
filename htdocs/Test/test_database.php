@@ -1,7 +1,7 @@
 <?php
     include 'db_connection.php';
     $conn = OpenCon();
-    echo "Connected Successfully \r\n";
+    echo "Connected Successfully";
 	
 	echo "<br>";
 	
@@ -11,10 +11,12 @@
 			// Output data of each row.
 			while($row = $result->fetch_assoc()) 
 			{
-				echo "id: " . $row["id"]. 
-				",<br> Client: ". $row["clients"]. 
-				",<br>  Hitman: " . $row["hitmen"]. 
-				",<br>  Target: " . $row["targets"]. 
+				echo "item_id: " . $row["item_id"]. 
+				",<br> product_name: ". $row["product_name"]. 
+				",<br>  price: " . $row["price"]. 
+				",<br>  date_created: " . $row["date_created"].
+				",<br>  review_id: " . $row["review_id"]. 
+				",<br>  user_id: " . $row["user_id"]. 
 				"<br><br>";
 			}
 		} else {
