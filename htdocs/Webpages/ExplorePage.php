@@ -5,6 +5,7 @@
     <link href="LandingPage.css" type="text/css" rel="Stylesheet" id="currstyle"/>
   </head>
     <body>
+      <div class="content">
       <!-- Nav bar logic -->
       <div class="topnav">
         <a href="LandingPage.php">Home</a>
@@ -98,6 +99,7 @@
 
         </main>
       </div>
+    </div>
 
       <!-- Footer logic -->
       <footer>
