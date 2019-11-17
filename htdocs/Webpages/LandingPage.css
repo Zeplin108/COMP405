@@ -23,7 +23,6 @@ main
 {
   margin-left: 190px;
   padding: 5px;
-  /* width: 85%; */
 }
 
 /* Styles nav bar */
@@ -36,17 +35,17 @@ main
   justify-content: space-around;
 }
 
-/* TODO: fix border */
 /* Styles text in nav bar*/
 .topnav a
 {
   float: left;
+  width: 20%;
   color: #ebeae8;
   text-align: center;
   padding: 24px 26px;
   text-decoration: none;
   font-size: 25px;
-  /* border-right: 3px solid black; */
+  border-right: 3px solid black;
 }
 
 /* Adds color when nav bar is hovered over */
@@ -58,12 +57,14 @@ main
 /* Makes active button in nav bar lighter */
 .topnav a.active
 {
-  width: 15%;
   background-color: gray;
   color: #ebeae8;
 }
 
-* {box-sizing: border-box;}
+*
+{
+  box-sizing: border-box;
+}
 
 .slideImages
 {
@@ -137,26 +138,17 @@ footer
   clear: both;
   background-color: #800000;
   border-top: 3px solid black;
-  /* position: absolute; */
   width: 100%;
   flex-shrink: 0;
   z-index: 1000;
 }
 
-/* Creates the separate columns for footer */
-*
-{
-  box-sizing: border-box;
-}
-
-/* TODO: fix border */
 /* Creates two equal columns next to each other */
 .column
 {
   float: left;
   width: 50%;
   padding: 10px;
-  border-right: 3px solid black;
 }
 
 /* Clear floats after the columns */
@@ -173,22 +165,19 @@ footer
   text-align: center;
   font-size: 25px;
 }
+/* End style for footer */
 
 /* Logic for side panel in explore and review page */
 aside
 {
   position: absolute;
   height: 100%;
-  width: 15%;
-  /* padding-top: 25px; */
+  width: 20%;
   text-align: center;
   background-color: #800000;
   border-right: 3px solid black;
-  /* top: 0px;
-  left: 0px; */
 }
 
-/* TODO: fix style to it shows up how I want it to */
 .accordion
 {
   background-color: #800000;
@@ -203,18 +192,32 @@ aside
   border: none;
 }
 
+.accordion:before
+{
+  content: '\003E';
+  margin-right: 5px;
+  font-size: 18px;
+  color: #ebeae8;
+}
+
+aside .active:before
+{
+  content: '\2228';
+}
+
 .panel
 {
   color: #ebeae8;
-  padding: 0 18px;
+  padding: 0px 18px;
   display: none;
   overflow: hidden;
 }
+/* End style for side panel */
 
 /* boxes for products */
 .boxes
 {
-  padding-left: 100px;
+  padding-left: 12%;
 }
 
 figure
@@ -224,16 +227,24 @@ figure
   height: 400px;
   text-align: center;
   font-size: 18px;
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 25px;
   float: left;
 }
 
-/* TODO: fix layout to be centered */
+/* TODO: add coloring to numbers so you know what page you're on */
 /* Pagination */
+.paginationWrapper
+{
+  display: block;
+  text-align: center;
+}
+
 .pagination
 {
   display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pagination a
@@ -243,6 +254,20 @@ figure
   padding: 8px 16px;
   text-decoration: none;
 }
+
+.pagination a.active
+{
+  background-color: #800000;
+  color: #ebeae8;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active)
+{
+  background-color: #ddd;
+  border-radius: 5px;
+}
+/* End pagination */
 
 /* Login */
 form
