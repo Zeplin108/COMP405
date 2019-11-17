@@ -35,12 +35,15 @@
 
           for(i = 0; i < acc.length; i++)
           {
-            acc[i].addEventListener("click", function() {
+            acc[i].addEventListener("click", function() 
+			{
               this.classList.toggle("active");
               var panel = this.nextElementSibling;
-              if(panel.style.display === "block") {
+              if(panel.style.display === "block") 
+			  {
                 panel.style.display = "none";
-              } else {
+              } else 
+			  {
                 panel.style.display = "block";
               }
             });
@@ -58,25 +61,25 @@
         <!-- Logic for products on page -->
         <section class="boxes">
           <figure>
-            <img src="sauce.jpg" style="width: 50%">
+            <img src="Images/sauce.jpg" style="width: 50%">
             <p>Description: Smooth tomato sauce</p>
             <p>"Highly recommend" posted by ABC123</p>
             <p style="text-align: right; padding: 10px">->More Reviews</p>
           </figure>
           <figure>
-            <img src="spatula.jpg" style="width: 50%">
+            <img src="Images/spatula.jpg" style="width: 50%">
             <p>Description: Two pack of spatulas</p>
             <p>"Love the pun" posted by DEF456</p>
             <p style="text-align: right; padding: 10px">->More Reviews</p>
           </figure>
           <figure>
-            <img src="bbq.jpg" style="width: 50%">
+            <img src="Images/bbq.jpg" style="width: 50%">
             <p>Description: Homemade barbeque sauce</p>
             <p>"Best sauce I've ever had" posted by DEF456</p>
             <p style="text-align: right; padding: 10px">->More Reviews</p>
           </figure>
           <figure>
-            <img src="alfredo.jpg" style="width: 40%">
+            <img src="Images/alfredo.jpg" style="width: 40%">
             <p>Description: Creamy alfredo sauce</p>
             <p>"Very rich, would buy again" posted by ABC123</p>
             <p style="text-align: right; padding: 10px">->More Reviews</p>
