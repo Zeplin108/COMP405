@@ -169,3 +169,11 @@
 [Sun Nov 17 15:22:21 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/spatula.jpg
 [Sun Nov 17 15:22:21 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/alfredo.jpg
 [Sun Nov 17 15:22:21 2019] [error] [client 127.0.0.1] File does not exist: D:/User/Applications/MAMP/htdocs/Webpages/sauce.jpg
+[Fri Nov 22 13:41:18 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]
+[Fri Nov 22 13:41:19 2019] [warn] pid file D:/User/Applications/MAMP/bin/apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Nov 22 13:41:19 2019] [notice] Digest: generating secret for digest authentication ...
+[Fri Nov 22 13:41:19 2019] [notice] Digest: done
+[Fri Nov 22 13:41:20 2019] [notice] Apache/2.2.31 (Win32) DAV/2 mod_ssl/2.2.31 OpenSSL/1.0.2h mod_fcgid/2.3.9 mod_wsgi/3.4 Python/2.7.6 PHP/7.3.7 mod_perl/2.0.8 Perl/v5.16.3 configured -- resuming normal operations
+[Fri Nov 22 13:41:20 2019] [notice] Server built: May  6 2016 10:19:53
+[Fri Nov 22 13:41:20 2019] [notice] Parent: Created child process 1812
+[Fri Nov 22 13:41:21 2019] [warn] Init: Session Cache is not configured [hint: SSLSessionCache]

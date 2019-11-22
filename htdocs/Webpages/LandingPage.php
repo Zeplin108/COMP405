@@ -24,19 +24,19 @@
         <div class="slideshow-container">
 
         <div class="slideImages">
-          <img src="pasta.jpg" style="width: 100%">
+          <img src="Images/pasta.jpg" style="width: 100%">
         </div>
 
         <div class="slideImages">
-          <img src="luna.jpg" style="width: 100%">
+          <img src="Images/luna.jpg" style="width: 100%">
         </div>
 
         <div class="slideImages">
-          <img src="phillies.jpg" style="width: 100%">
+          <img src="Images/phillies.jpg" style="width: 100%">
         </div>
 
         <div class="slideImages">
-          <img src="race.jpg" style="width: 100%">
+          <img src="Images/race.jpg" style="width: 100%">
         </div>
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
