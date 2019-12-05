@@ -64,25 +64,25 @@
                 <img src="sauce.jpg" style="width: 50%; padding-top: 10px">
                 <p>Description: Smooth tomato sauce</p>
                 <p>Price: $3.99</p>
-                <p class="moreInfo">More Info</p>
+                <p class="moreInfo"><a href="MoreInfo.php">More Info</a></p>
               </figure>
               <figure>
                 <img src="spatula.jpg" style="width: 50%; padding-top: 10px">
                 <p>Description: Two pack of spatulas</p>
                 <p>Price: $4.99</p>
-                <p class="moreInfo">More Info</p>
+                <p class="moreInfo"><a href="MoreInfo.php">More Info</a></p>
               </figure>
               <figure>
                 <img src="bbq.jpg" style="width: 50%; padding-top: 10px">
                 <p>Description: Homemade barbeque sauce</p>
                 <p>Price: $6.99</p>
-                <p class="moreInfo">More Info</p>
+                <p class="moreInfo"><a href="MoreInfo.php">More Info</a></p>
               </figure>
               <figure>
                 <img src="alfredo.jpg" style="width: 40%; padding-top: 10px">
                 <p>Description: Creamy alfredo sauce</p>
                 <p>Price: $5.99</p>
-                <p class="moreInfo">More Info</p>
+                <p class="moreInfo"><a href="MoreInfo.php">More Info</a></p>
               </figure>
 
               <!-- Pagination logic -->

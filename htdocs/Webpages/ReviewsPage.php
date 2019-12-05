@@ -63,25 +63,25 @@
               <img src="sauce.jpg" style="width: 50%; padding-top: 10px">
               <p>Description: Smooth tomato sauce</p>
               <p>"Highly recommend" posted by ABC123</p>
-              <p class="moreInfo">More Reviews</p>
+              <p class="moreInfo"><a href="MoreReviews.php">More Reviews</a></p>
             </figure>
             <figure>
               <img src="spatula.jpg" style="width: 50%; padding-top: 10px">
               <p>Description: Two pack of spatulas</p>
               <p>"Love the pun" posted by DEF456</p>
-              <p class="moreInfo">More Reviews</p>
+              <p class="moreInfo"><a href="MoreReviews.php">More Reviews</a></p>
             </figure>
             <figure>
               <img src="bbq.jpg" style="width: 50%; padding-top: 10px">
               <p>Description: Homemade barbeque sauce</p>
               <p>"Best sauce I've ever had" posted by DEF456</p>
-              <p class="moreInfo">More Reviews</p>
+              <p class="moreInfo"><a href="MoreReviews.php">More Reviews</a></p>
             </figure>
             <figure>
               <img src="alfredo.jpg" style="width: 40%; padding-top: 10px">
               <p>Description: Creamy alfredo sauce</p>
               <p>"Very rich, would buy again" posted by ABC123</p>
-              <p class="moreInfo">More Reviews</p>
+              <p class="moreInfo"><a href="MoreReviews.php">More Reviews</a></p>
             </figure>
 
             <!-- Pagination logic -->

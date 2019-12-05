@@ -19,7 +19,6 @@
     <!-- TODO: fix styling -->
     <div style="color: #800000; text-align: center; font-size: 50px; padding: 0px">
       <h2>About</h2>
-      <p>Random shit about the company</p>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         Pellentesque maximus bibendum elementum. Integer ultricies justo
         et nunc elementum dignissim. Suspendisse mattis finibus est, in
